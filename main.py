@@ -34,7 +34,7 @@ def process_sales_reps():
         current_date = datetime.now()
         year = current_date.strftime("%Y")
         month = current_date.strftime("%B")
-        directory_path = f'{year}/{month}/' 
+        directory_path = f'intermediate{year}/{month}/' 
 
         blob_list = blob_service_client.get_container_client(container_name).list_blobs(name_starts_with=directory_path)
         sales_rep_files = [blob.name for blob in blob_list if blob.name.endswith('.xlsx')]
