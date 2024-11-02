@@ -18,7 +18,6 @@ filelock==3.16.1
 h11==0.14.0
 idna==3.10
 isodate==0.7.2
-logging==0.4.9.6
 msal==1.31.0
 msal-extensions==1.2.0
 numpy==2.1.2
