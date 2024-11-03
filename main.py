@@ -12,7 +12,7 @@ connection_string = 'DefaultEndpointsProtocol=https;AccountName=narula12storage;
 container_name = 'intermediate'
 logic_app_url = 'https://prod-30.northcentralus.logic.azure.com:443/workflows/3b6f71f697e74fa09220c7a5fcc97462/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=brM2VA8ivnivrSz5hBqS8bcfUZgDwOSciIKaipL_4Ys'
 
-# Use async lifespan context manager to initialize BlobServiceClient
+# Use async1 lifespan context manager to initialize BlobServiceClient
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     global blob_service_client
